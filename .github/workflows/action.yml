@@ -1,4 +1,4 @@
-name: run task.py
+name: run sender.py
 
 on:
   push:
@@ -30,4 +30,4 @@ jobs:
       - name: execute py script # run main.py
         env:
           SLACK_ID: ${{ secrets.SLACK_ID }}
-        run: python task.py
+        run: python sender.py
