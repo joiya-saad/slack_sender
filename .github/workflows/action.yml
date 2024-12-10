@@ -31,10 +31,3 @@ jobs:
         env:
           SLACK_ID: ${{ secrets.SLACK_ID }}
         run: python task.py
-
-
-      - name: push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GH_TOKEN }}
-          branch: main 
